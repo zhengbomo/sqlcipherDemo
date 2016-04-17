@@ -54,7 +54,7 @@
         if ([self.tfencryptKey.stringValue length] > 0) {
             BOOL res = [FMEncryptHelper encryptDatabase:self.lbPath.stringValue encryptKey:self.tfencryptKey.stringValue];
             
-            NSString *msg = res ? @"encrypt success" : @"encrypt fail";
+            NSString *msg = res ? @"encrypt success" : @"encrypt fail:file is not a sqlite file or encryptKey is not correct";
             
             [self alert:msg];
         } else {
@@ -71,7 +71,7 @@
         
         if ([self.tfencryptKey.stringValue length] > 0) {
             BOOL res = [FMEncryptHelper unEncryptDatabase:self.lbPath.stringValue encryptKey:self.tfencryptKey.stringValue];
-            NSString *msg = res ? @"decrypt success" : @"decrypt fail";
+            NSString *msg = res ? @"decrypt success" : @"decrypt fail:file is not a sqlite file or encryptKey is not correct";
             [self alert:msg];
         } else {
             [self alert:@"encrypt key no found"];
