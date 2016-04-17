@@ -1,0 +1,7 @@
+platform :ios, "7.0"
+
+pod 'FMDB/SQLCipher', '~> 2.6.2'
+
+target :SqlcipherDemoTests, :exclusive => true do
+  # pod 'Kiwi'
+end

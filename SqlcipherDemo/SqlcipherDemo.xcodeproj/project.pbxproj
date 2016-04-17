@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BC3ED7D1CC3C7730086E082 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3ED7C1CC3C7730086E082 /* main.m */; };
+		6BC3ED801CC3C7730086E082 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3ED7F1CC3C7730086E082 /* AppDelegate.m */; };
+		6BC3ED831CC3C7730086E082 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3ED821CC3C7730086E082 /* ViewController.m */; };
+		6BC3ED861CC3C7730086E082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC3ED841CC3C7730086E082 /* Main.storyboard */; };
+		6BC3ED881CC3C7730086E082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC3ED871CC3C7730086E082 /* Assets.xcassets */; };
+		6BC3ED8B1CC3C7730086E082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC3ED891CC3C7730086E082 /* LaunchScreen.storyboard */; };
+		6BC3ED961CC3C7740086E082 /* SqlcipherDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3ED951CC3C7740086E082 /* SqlcipherDemoTests.m */; };
+		6BC3EDA11CC3C7740086E082 /* SqlcipherDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDA01CC3C7740086E082 /* SqlcipherDemoUITests.m */; };
+		6BC3EDB11CC3C9E60086E082 /* DbService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDB01CC3C9E60086E082 /* DbService.m */; };
+		6BC3EDBA1CC3CB0A0086E082 /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDB71CC3CB0A0086E082 /* FMEncryptDatabase.m */; };
+		6BC3EDBB1CC3CB0A0086E082 /* FMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDB91CC3CB0A0086E082 /* FMEncryptDatabaseQueue.m */; };
+		6BC3EDC51CC3EAC50086E082 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDC41CC3EAC50086E082 /* PersonModel.m */; };
+		6BC3EDC81CC3EADD0086E082 /* DbTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDC71CC3EADD0086E082 /* DbTest.m */; };
+		6BC3EDCB1CC3EB430086E082 /* FMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDCA1CC3EB430086E082 /* FMEncryptHelper.m */; };
+		E28C73CCB0AEE28CEE12E225 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D219B2FD87FD2EC992F176D0 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BC3ED921CC3C7740086E082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BC3ED701CC3C7730086E082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BC3ED771CC3C7730086E082;
+			remoteInfo = SqlcipherDemo;
+		};
+		6BC3ED9D1CC3C7740086E082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BC3ED701CC3C7730086E082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BC3ED771CC3C7730086E082;
+			remoteInfo = SqlcipherDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54394B5021070968BFCE3AD5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6BC3ED781CC3C7730086E082 /* SqlcipherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqlcipherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC3ED7C1CC3C7730086E082 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6BC3ED7E1CC3C7730086E082 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6BC3ED7F1CC3C7730086E082 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6BC3ED811CC3C7730086E082 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6BC3ED821CC3C7730086E082 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6BC3ED851CC3C7730086E082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BC3ED871CC3C7730086E082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BC3ED8A1CC3C7730086E082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BC3ED8C1CC3C7730086E082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC3ED911CC3C7740086E082 /* SqlcipherDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqlcipherDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC3ED951CC3C7740086E082 /* SqlcipherDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlcipherDemoTests.m; sourceTree = "<group>"; };
+		6BC3ED971CC3C7740086E082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC3ED9C1CC3C7740086E082 /* SqlcipherDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqlcipherDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC3EDA01CC3C7740086E082 /* SqlcipherDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlcipherDemoUITests.m; sourceTree = "<group>"; };
+		6BC3EDA21CC3C7740086E082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC3EDAF1CC3C9E60086E082 /* DbService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbService.h; sourceTree = "<group>"; };
+		6BC3EDB01CC3C9E60086E082 /* DbService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbService.m; sourceTree = "<group>"; };
+		6BC3EDB61CC3CB0A0086E082 /* FMEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabase.h; sourceTree = "<group>"; };
+		6BC3EDB71CC3CB0A0086E082 /* FMEncryptDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabase.m; sourceTree = "<group>"; };
+		6BC3EDB81CC3CB0A0086E082 /* FMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
+		6BC3EDB91CC3CB0A0086E082 /* FMEncryptDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabaseQueue.m; sourceTree = "<group>"; };
+		6BC3EDBC1CC3CB6D0086E082 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6BC3EDBE1CC3D2A50086E082 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		6BC3EDC21CC3E7CC0086E082 /* ColumnPropertyMappingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColumnPropertyMappingDelegate.h; sourceTree = "<group>"; };
+		6BC3EDC31CC3EAC50086E082 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		6BC3EDC41CC3EAC50086E082 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		6BC3EDC61CC3EADD0086E082 /* DbTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbTest.h; sourceTree = "<group>"; };
+		6BC3EDC71CC3EADD0086E082 /* DbTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbTest.m; sourceTree = "<group>"; };
+		6BC3EDC91CC3EB430086E082 /* FMEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptHelper.h; sourceTree = "<group>"; };
+		6BC3EDCA1CC3EB430086E082 /* FMEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptHelper.m; sourceTree = "<group>"; };
+		7C10B576BF915CF3119DC588 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D219B2FD87FD2EC992F176D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BC3ED751CC3C7730086E082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28C73CCB0AEE28CEE12E225 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC3ED8E1CC3C7740086E082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC3ED991CC3C7740086E082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24AC18282A6A9529D984B795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3EDBE1CC3D2A50086E082 /* libsqlite3.0.tbd */,
+				6BC3EDBC1CC3CB6D0086E082 /* libsqlite3.tbd */,
+				D219B2FD87FD2EC992F176D0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BC3ED6F1CC3C7730086E082 = {
+			isa = PBXGroup;
+			children = (
+				6BC3ED7A1CC3C7730086E082 /* SqlcipherDemo */,
+				6BC3ED941CC3C7740086E082 /* SqlcipherDemoTests */,
+				6BC3ED9F1CC3C7740086E082 /* SqlcipherDemoUITests */,
+				6BC3ED791CC3C7730086E082 /* Products */,
+				6F1EBF40B97CC4C1C5BDCCFB /* Pods */,
+				24AC18282A6A9529D984B795 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BC3ED791CC3C7730086E082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3ED781CC3C7730086E082 /* SqlcipherDemo.app */,
+				6BC3ED911CC3C7740086E082 /* SqlcipherDemoTests.xctest */,
+				6BC3ED9C1CC3C7740086E082 /* SqlcipherDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BC3ED7A1CC3C7730086E082 /* SqlcipherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3EDB51CC3CAEC0086E082 /* EncryptFMDB */,
+				6BC3EDAE1CC3C9DF0086E082 /* Data */,
+				6BC3ED7E1CC3C7730086E082 /* AppDelegate.h */,
+				6BC3ED7F1CC3C7730086E082 /* AppDelegate.m */,
+				6BC3ED811CC3C7730086E082 /* ViewController.h */,
+				6BC3ED821CC3C7730086E082 /* ViewController.m */,
+				6BC3ED841CC3C7730086E082 /* Main.storyboard */,
+				6BC3ED871CC3C7730086E082 /* Assets.xcassets */,
+				6BC3ED891CC3C7730086E082 /* LaunchScreen.storyboard */,
+				6BC3ED8C1CC3C7730086E082 /* Info.plist */,
+				6BC3ED7B1CC3C7730086E082 /* Supporting Files */,
+				6BC3EDC61CC3EADD0086E082 /* DbTest.h */,
+				6BC3EDC71CC3EADD0086E082 /* DbTest.m */,
+			);
+			path = SqlcipherDemo;
+			sourceTree = "<group>";
+		};
+		6BC3ED7B1CC3C7730086E082 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3ED7C1CC3C7730086E082 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BC3ED941CC3C7740086E082 /* SqlcipherDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3ED951CC3C7740086E082 /* SqlcipherDemoTests.m */,
+				6BC3ED971CC3C7740086E082 /* Info.plist */,
+			);
+			path = SqlcipherDemoTests;
+			sourceTree = "<group>";
+		};
+		6BC3ED9F1CC3C7740086E082 /* SqlcipherDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3EDA01CC3C7740086E082 /* SqlcipherDemoUITests.m */,
+				6BC3EDA21CC3C7740086E082 /* Info.plist */,
+			);
+			path = SqlcipherDemoUITests;
+			sourceTree = "<group>";
+		};
+		6BC3EDAE1CC3C9DF0086E082 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3EDC31CC3EAC50086E082 /* PersonModel.h */,
+				6BC3EDC41CC3EAC50086E082 /* PersonModel.m */,
+				6BC3EDAF1CC3C9E60086E082 /* DbService.h */,
+				6BC3EDB01CC3C9E60086E082 /* DbService.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6BC3EDB51CC3CAEC0086E082 /* EncryptFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3EDC91CC3EB430086E082 /* FMEncryptHelper.h */,
+				6BC3EDCA1CC3EB430086E082 /* FMEncryptHelper.m */,
+				6BC3EDC21CC3E7CC0086E082 /* ColumnPropertyMappingDelegate.h */,
+				6BC3EDB61CC3CB0A0086E082 /* FMEncryptDatabase.h */,
+				6BC3EDB71CC3CB0A0086E082 /* FMEncryptDatabase.m */,
+				6BC3EDB81CC3CB0A0086E082 /* FMEncryptDatabaseQueue.h */,
+				6BC3EDB91CC3CB0A0086E082 /* FMEncryptDatabaseQueue.m */,
+			);
+			path = EncryptFMDB;
+			sourceTree = "<group>";
+		};
+		6F1EBF40B97CC4C1C5BDCCFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54394B5021070968BFCE3AD5 /* Pods.debug.xcconfig */,
+				7C10B576BF915CF3119DC588 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BC3ED771CC3C7730086E082 /* SqlcipherDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BC3EDA51CC3C7740086E082 /* Build configuration list for PBXNativeTarget "SqlcipherDemo" */;
+			buildPhases = (
+				3D26D57A4A0C9DD6F148815B /* Check Pods Manifest.lock */,
+				6BC3ED741CC3C7730086E082 /* Sources */,
+				6BC3ED751CC3C7730086E082 /* Frameworks */,
+				6BC3ED761CC3C7730086E082 /* Resources */,
+				2CEEE6D9BAA044AF63F30052 /* Embed Pods Frameworks */,
+				E08B6DD15D240DAF11170BF5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SqlcipherDemo;
+			productName = SqlcipherDemo;
+			productReference = 6BC3ED781CC3C7730086E082 /* SqlcipherDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BC3ED901CC3C7740086E082 /* SqlcipherDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BC3EDA81CC3C7740086E082 /* Build configuration list for PBXNativeTarget "SqlcipherDemoTests" */;
+			buildPhases = (
+				6BC3ED8D1CC3C7740086E082 /* Sources */,
+				6BC3ED8E1CC3C7740086E082 /* Frameworks */,
+				6BC3ED8F1CC3C7740086E082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BC3ED931CC3C7740086E082 /* PBXTargetDependency */,
+			);
+			name = SqlcipherDemoTests;
+			productName = SqlcipherDemoTests;
+			productReference = 6BC3ED911CC3C7740086E082 /* SqlcipherDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BC3ED9B1CC3C7740086E082 /* SqlcipherDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BC3EDAB1CC3C7740086E082 /* Build configuration list for PBXNativeTarget "SqlcipherDemoUITests" */;
+			buildPhases = (
+				6BC3ED981CC3C7740086E082 /* Sources */,
+				6BC3ED991CC3C7740086E082 /* Frameworks */,
+				6BC3ED9A1CC3C7740086E082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BC3ED9E1CC3C7740086E082 /* PBXTargetDependency */,
+			);
+			name = SqlcipherDemoUITests;
+			productName = SqlcipherDemoUITests;
+			productReference = 6BC3ED9C1CC3C7740086E082 /* SqlcipherDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BC3ED701CC3C7730086E082 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = bomo;
+				TargetAttributes = {
+					6BC3ED771CC3C7730086E082 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					6BC3ED901CC3C7740086E082 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6BC3ED771CC3C7730086E082;
+					};
+					6BC3ED9B1CC3C7740086E082 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6BC3ED771CC3C7730086E082;
+					};
+				};
+			};
+			buildConfigurationList = 6BC3ED731CC3C7730086E082 /* Build configuration list for PBXProject "SqlcipherDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BC3ED6F1CC3C7730086E082;
+			productRefGroup = 6BC3ED791CC3C7730086E082 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BC3ED771CC3C7730086E082 /* SqlcipherDemo */,
+				6BC3ED901CC3C7740086E082 /* SqlcipherDemoTests */,
+				6BC3ED9B1CC3C7740086E082 /* SqlcipherDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BC3ED761CC3C7730086E082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC3ED8B1CC3C7730086E082 /* LaunchScreen.storyboard in Resources */,
+				6BC3ED881CC3C7730086E082 /* Assets.xcassets in Resources */,
+				6BC3ED861CC3C7730086E082 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC3ED8F1CC3C7740086E082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC3ED9A1CC3C7740086E082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CEEE6D9BAA044AF63F30052 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D26D57A4A0C9DD6F148815B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E08B6DD15D240DAF11170BF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BC3ED741CC3C7730086E082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC3ED831CC3C7730086E082 /* ViewController.m in Sources */,
+				6BC3EDC81CC3EADD0086E082 /* DbTest.m in Sources */,
+				6BC3EDCB1CC3EB430086E082 /* FMEncryptHelper.m in Sources */,
+				6BC3EDB11CC3C9E60086E082 /* DbService.m in Sources */,
+				6BC3ED801CC3C7730086E082 /* AppDelegate.m in Sources */,
+				6BC3ED7D1CC3C7730086E082 /* main.m in Sources */,
+				6BC3EDBB1CC3CB0A0086E082 /* FMEncryptDatabaseQueue.m in Sources */,
+				6BC3EDBA1CC3CB0A0086E082 /* FMEncryptDatabase.m in Sources */,
+				6BC3EDC51CC3EAC50086E082 /* PersonModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC3ED8D1CC3C7740086E082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC3ED961CC3C7740086E082 /* SqlcipherDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC3ED981CC3C7740086E082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC3EDA11CC3C7740086E082 /* SqlcipherDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BC3ED931CC3C7740086E082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BC3ED771CC3C7730086E082 /* SqlcipherDemo */;
+			targetProxy = 6BC3ED921CC3C7740086E082 /* PBXContainerItemProxy */;
+		};
+		6BC3ED9E1CC3C7740086E082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BC3ED771CC3C7730086E082 /* SqlcipherDemo */;
+			targetProxy = 6BC3ED9D1CC3C7740086E082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BC3ED841CC3C7730086E082 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BC3ED851CC3C7730086E082 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BC3ED891CC3C7730086E082 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BC3ED8A1CC3C7730086E082 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BC3EDA31CC3C7740086E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6BC3EDA41CC3C7740086E082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BC3EDA61CC3C7740086E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54394B5021070968BFCE3AD5 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = SqlcipherDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bomo.SqlcipherDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6BC3EDA71CC3C7740086E082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C10B576BF915CF3119DC588 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = SqlcipherDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bomo.SqlcipherDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6BC3EDA91CC3C7740086E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SqlcipherDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bomo.SqlcipherDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SqlcipherDemo.app/SqlcipherDemo";
+			};
+			name = Debug;
+		};
+		6BC3EDAA1CC3C7740086E082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SqlcipherDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bomo.SqlcipherDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SqlcipherDemo.app/SqlcipherDemo";
+			};
+			name = Release;
+		};
+		6BC3EDAC1CC3C7740086E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SqlcipherDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bomo.SqlcipherDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SqlcipherDemo;
+			};
+			name = Debug;
+		};
+		6BC3EDAD1CC3C7740086E082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SqlcipherDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bomo.SqlcipherDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SqlcipherDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BC3ED731CC3C7730086E082 /* Build configuration list for PBXProject "SqlcipherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC3EDA31CC3C7740086E082 /* Debug */,
+				6BC3EDA41CC3C7740086E082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BC3EDA51CC3C7740086E082 /* Build configuration list for PBXNativeTarget "SqlcipherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC3EDA61CC3C7740086E082 /* Debug */,
+				6BC3EDA71CC3C7740086E082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BC3EDA81CC3C7740086E082 /* Build configuration list for PBXNativeTarget "SqlcipherDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC3EDA91CC3C7740086E082 /* Debug */,
+				6BC3EDAA1CC3C7740086E082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BC3EDAB1CC3C7740086E082 /* Build configuration list for PBXNativeTarget "SqlcipherDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC3EDAC1CC3C7740086E082 /* Debug */,
+				6BC3EDAD1CC3C7740086E082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BC3ED701CC3C7730086E082 /* Project object */;
+}
