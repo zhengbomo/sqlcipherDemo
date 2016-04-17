@@ -50,16 +50,31 @@
     
     sqlite3 *unencrypted_DB;
     if (sqlite3_open([sourcePath UTF8String], &unencrypted_DB) == SQLITE_OK) {
-        
+        char *errmsg;
         // Attach empty encrypted database to unencrypted database
-        sqlite3_exec(unencrypted_DB, sqlQ, NULL, NULL, NULL);
-        
+        sqlite3_exec(unencrypted_DB, sqlQ, NULL, NULL, &errmsg);
+        if (errmsg) {
+            NSLog(@"%@", [NSString stringWithUTF8String:errmsg]);
+            sqlite3_close(unencrypted_DB);
+            return NO;
+        }
+
         // export database
-        sqlite3_exec(unencrypted_DB, "SELECT sqlcipher_export('encrypted');", NULL, NULL, NULL);
-        
+        sqlite3_exec(unencrypted_DB, "SELECT sqlcipher_export('encrypted');", NULL, NULL, &errmsg);
+        if (errmsg) {
+            NSLog(@"%@", [NSString stringWithUTF8String:errmsg]);
+            sqlite3_close(unencrypted_DB);
+            return NO;
+        }
+
         // Detach encrypted database
-        sqlite3_exec(unencrypted_DB, "DETACH DATABASE encrypted;", NULL, NULL, NULL);
-        
+        sqlite3_exec(unencrypted_DB, "DETACH DATABASE encrypted;", NULL, NULL, &errmsg);
+        if (errmsg) {
+            NSLog(@"%@", [NSString stringWithUTF8String:errmsg]);
+            sqlite3_close(unencrypted_DB);
+            return NO;
+        }
+
         sqlite3_close(unencrypted_DB);
         
         return YES;
@@ -81,16 +96,34 @@
     if (sqlite3_open([sourcePath UTF8String], &encrypted_DB) == SQLITE_OK) {
         
         
-        sqlite3_exec(encrypted_DB, [[NSString stringWithFormat:@"PRAGMA key = '%@';", encryptKey] UTF8String], NULL, NULL, NULL);
+        char* errmsg;
+        
+        sqlite3_exec(encrypted_DB, [[NSString stringWithFormat:@"PRAGMA key = '%@';", encryptKey] UTF8String], NULL, NULL, &errmsg);
         
         // Attach empty unencrypted database to encrypted database
-        sqlite3_exec(encrypted_DB, sqlQ, NULL, NULL, NULL);
+        sqlite3_exec(encrypted_DB, sqlQ, NULL, NULL, &errmsg);
+        
+        if (errmsg) {
+            NSLog(@"%@", [NSString stringWithUTF8String:errmsg]);
+            sqlite3_close(encrypted_DB);
+            return NO;
+        }
         
         // export database
-        sqlite3_exec(encrypted_DB, "SELECT sqlcipher_export('plaintext');", NULL, NULL, NULL);
+        sqlite3_exec(encrypted_DB, "SELECT sqlcipher_export('plaintext');", NULL, NULL, &errmsg);
+        if (errmsg) {
+            NSLog(@"%@", [NSString stringWithUTF8String:errmsg]);
+            sqlite3_close(encrypted_DB);
+            return NO;
+        }
         
         // Detach unencrypted database
-        sqlite3_exec(encrypted_DB, "DETACH DATABASE plaintext;", NULL, NULL, NULL);
+        sqlite3_exec(encrypted_DB, "DETACH DATABASE plaintext;", NULL, NULL, &errmsg);
+        if (errmsg) {
+            NSLog(@"%@", [NSString stringWithUTF8String:errmsg]);
+            sqlite3_close(encrypted_DB);
+            return NO;
+        }
         
         sqlite3_close(encrypted_DB);
         

@@ -1,0 +1,7 @@
+platform :osx
+
+pod 'FMDB/SQLCipher', '~> 2.6.2'
+
+target :SqlcipherToolTests, :exclusive => true do
+  # pod 'Kiwi'
+end

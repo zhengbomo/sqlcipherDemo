@@ -17,16 +17,15 @@
     NSString *_dbPath;
 }
 @property (weak, nonatomic) IBOutlet UILabel *lbInfo;
-
+@property (nonatomic, copy) NSString *encryptKey;
 @end
 
 @implementation ViewController
 
-static NSString *encryptKey = @"32r32rdewfds";
-
 #pragma mark - Life Cycle
 - (void)viewDidLoad
 {
+    self.encryptKey = @"32r32rdewfds";
     [super viewDidLoad];
     
     NSString *directory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
@@ -45,7 +44,7 @@ static NSString *encryptKey = @"32r32rdewfds";
     DbService *dbService = [[DbService alloc] initWithPath:_dbPath encryptKey:nil];
     [DbTest createTable:dbService];
     [DbTest insertPeople:dbService];
-    [[[UIAlertView alloc] initWithTitle:nil message:@"create unencrypt database success" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil] show];
+    [[[UIAlertView alloc] initWithTitle:nil message:@"create unencrypt database success with 100 row for People table" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil] show];
 }
 - (IBAction)query:(id)sender
 {
@@ -58,7 +57,7 @@ static NSString *encryptKey = @"32r32rdewfds";
 
 - (IBAction)encrypt:(id)sender
 {
-    BOOL res = [FMEncryptHelper encryptDatabase:_dbPath encryptKey:encryptKey];
+    BOOL res = [FMEncryptHelper encryptDatabase:_dbPath encryptKey:self.encryptKey];
     
     NSString *msg = res ? @"encrypt success" : @"encrypt fail";
     [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil] show];
@@ -66,7 +65,7 @@ static NSString *encryptKey = @"32r32rdewfds";
 
 - (IBAction)encryptQuery:(id)sender
 {
-    DbService *dbService = [[DbService alloc] initWithPath:_dbPath encryptKey:encryptKey];
+    DbService *dbService = [[DbService alloc] initWithPath:_dbPath encryptKey:self.encryptKey];
     NSInteger count = [DbTest peopleCount:dbService];
     
     NSString *msg = [NSString stringWithFormat:@"people count:%@", @(count)];
@@ -75,7 +74,7 @@ static NSString *encryptKey = @"32r32rdewfds";
 
 - (IBAction)decrypt:(id)sender
 {
-    BOOL res = [FMEncryptHelper unEncryptDatabase:_dbPath encryptKey:encryptKey];
+    BOOL res = [FMEncryptHelper unEncryptDatabase:_dbPath encryptKey:self.encryptKey];
     
     NSString *msg = res ? @"decrypt success" : @"decrypt fail";
     [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil] show];

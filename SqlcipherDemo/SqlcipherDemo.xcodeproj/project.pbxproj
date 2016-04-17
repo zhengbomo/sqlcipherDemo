@@ -19,8 +19,8 @@
 		6BC3EDBA1CC3CB0A0086E082 /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDB71CC3CB0A0086E082 /* FMEncryptDatabase.m */; };
 		6BC3EDBB1CC3CB0A0086E082 /* FMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDB91CC3CB0A0086E082 /* FMEncryptDatabaseQueue.m */; };
 		6BC3EDC51CC3EAC50086E082 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDC41CC3EAC50086E082 /* PersonModel.m */; };
-		6BC3EDC81CC3EADD0086E082 /* DbTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDC71CC3EADD0086E082 /* DbTest.m */; };
 		6BC3EDCB1CC3EB430086E082 /* FMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDCA1CC3EB430086E082 /* FMEncryptHelper.m */; };
+		6BC3EE0A1CC409530086E082 /* DbTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EE091CC409530086E082 /* DbTest.m */; };
 		E28C73CCB0AEE28CEE12E225 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D219B2FD87FD2EC992F176D0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -70,10 +70,10 @@
 		6BC3EDC21CC3E7CC0086E082 /* ColumnPropertyMappingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColumnPropertyMappingDelegate.h; sourceTree = "<group>"; };
 		6BC3EDC31CC3EAC50086E082 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		6BC3EDC41CC3EAC50086E082 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
-		6BC3EDC61CC3EADD0086E082 /* DbTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbTest.h; sourceTree = "<group>"; };
-		6BC3EDC71CC3EADD0086E082 /* DbTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbTest.m; sourceTree = "<group>"; };
 		6BC3EDC91CC3EB430086E082 /* FMEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptHelper.h; sourceTree = "<group>"; };
 		6BC3EDCA1CC3EB430086E082 /* FMEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptHelper.m; sourceTree = "<group>"; };
+		6BC3EE081CC409530086E082 /* DbTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbTest.h; sourceTree = "<group>"; };
+		6BC3EE091CC409530086E082 /* DbTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbTest.m; sourceTree = "<group>"; };
 		7C10B576BF915CF3119DC588 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D219B2FD87FD2EC992F176D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,8 +150,6 @@
 				6BC3ED891CC3C7730086E082 /* LaunchScreen.storyboard */,
 				6BC3ED8C1CC3C7730086E082 /* Info.plist */,
 				6BC3ED7B1CC3C7730086E082 /* Supporting Files */,
-				6BC3EDC61CC3EADD0086E082 /* DbTest.h */,
-				6BC3EDC71CC3EADD0086E082 /* DbTest.m */,
 			);
 			path = SqlcipherDemo;
 			sourceTree = "<group>";
@@ -185,6 +183,8 @@
 		6BC3EDAE1CC3C9DF0086E082 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				6BC3EE081CC409530086E082 /* DbTest.h */,
+				6BC3EE091CC409530086E082 /* DbTest.m */,
 				6BC3EDC31CC3EAC50086E082 /* PersonModel.h */,
 				6BC3EDC41CC3EAC50086E082 /* PersonModel.m */,
 				6BC3EDAF1CC3C9E60086E082 /* DbService.h */,
@@ -398,7 +398,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BC3ED831CC3C7730086E082 /* ViewController.m in Sources */,
-				6BC3EDC81CC3EADD0086E082 /* DbTest.m in Sources */,
 				6BC3EDCB1CC3EB430086E082 /* FMEncryptHelper.m in Sources */,
 				6BC3EDB11CC3C9E60086E082 /* DbService.m in Sources */,
 				6BC3ED801CC3C7730086E082 /* AppDelegate.m in Sources */,
@@ -406,6 +405,7 @@
 				6BC3EDBB1CC3CB0A0086E082 /* FMEncryptDatabaseQueue.m in Sources */,
 				6BC3EDBA1CC3CB0A0086E082 /* FMEncryptDatabase.m in Sources */,
 				6BC3EDC51CC3EAC50086E082 /* PersonModel.m in Sources */,
+				6BC3EE0A1CC409530086E082 /* DbTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
