@@ -42,10 +42,13 @@
 - (IBAction)init:(id)sender
 {
     DbService *dbService = [[DbService alloc] initWithPath:_dbPath encryptKey:nil];
-    [DbTest createTable:dbService];
-    [DbTest insertPeople:dbService];
-    [[[UIAlertView alloc] initWithTitle:nil message:@"create unencrypt database success with 100 row for People table" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil] show];
-}
+    if ([DbTest createTable:dbService]) {
+        [DbTest insertPeople:dbService];
+        [[[UIAlertView alloc] initWithTitle:nil message:@"create unencrypt database success with 100 row for People table" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil] show];
+    } else {
+        [[[UIAlertView alloc] initWithTitle:nil message:@"table was exists" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil] show];
+    }
+ }
 - (IBAction)query:(id)sender
 {
     DbService *dbService = [[DbService alloc] initWithPath:_dbPath encryptKey:nil];

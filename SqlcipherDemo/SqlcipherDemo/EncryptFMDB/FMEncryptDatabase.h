@@ -14,7 +14,4 @@
 
 - (instancetype)initWithPath:(NSString*)aPath encryptKey:(NSString *)encryptKey;
 
-//* 如果需要自定义encryptkey，可以调用这个方法修改（在使用之前）
-//+ (void)setEncryptKey:(NSString *)encryptKey;
-
 @end

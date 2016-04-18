@@ -10,19 +10,19 @@
 
 @interface FMEncryptHelper : NSObject
 
-/** 对数据库加密 */
+/** encrypt sqlite database (same file) */
 + (BOOL)encryptDatabase:(NSString *)path encryptKey:(NSString *)encryptKey;
 
-/** 对数据库解密 */
+/** decrypt sqlite database (same file) */
 + (BOOL)unEncryptDatabase:(NSString *)path encryptKey:(NSString *)encryptKey;
 
-/** 对数据库加密 */
+/** encrypt sqlite database to new file */
 + (BOOL)encryptDatabase:(NSString *)sourcePath targetPath:(NSString *)targetPath encryptKey:(NSString *)encryptKey;
 
-/** 对数据库解密 */
+/** decrypt sqlite database to new file */
 + (BOOL)unEncryptDatabase:(NSString *)sourcePath targetPath:(NSString *)targetPath encryptKey:(NSString *)encryptKey;
 
-/** 修改数据库秘钥 */
+/** change secretKey for sqlite database */
 + (BOOL)changeKey:(NSString *)dbPath originKey:(NSString *)originKey newKey:(NSString *)newKey;
 
 @end

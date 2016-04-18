@@ -18,49 +18,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMg-mo-kd1">
-                                <rect key="frame" x="285" y="65" width="30" height="30"/>
-                                <state key="normal" title="Init"/>
+                                <rect key="frame" x="282" y="65" width="36" height="30"/>
+                                <state key="normal" title="1. Init"/>
                                 <connections>
                                     <action selector="init:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnz-xS-Ksc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgJ-z0-Abg">
-                                <rect key="frame" x="279" y="107" width="42" height="30"/>
-                                <state key="normal" title="Query"/>
+                                <rect key="frame" x="204" y="107" width="192" height="30"/>
+                                <state key="normal" title="2. query without encryptkey"/>
                                 <connections>
                                     <action selector="query:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUr-aG-fMr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USF-Zn-KwX">
-                                <rect key="frame" x="273.5" y="149" width="53" height="30"/>
-                                <state key="normal" title="Encrypt"/>
+                                <rect key="frame" x="265" y="149" width="70" height="30"/>
+                                <state key="normal" title="3. encrypt"/>
                                 <connections>
                                     <action selector="encrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8G-n9-8gL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWF-nv-OWQ">
-                                <rect key="frame" x="279" y="191" width="42" height="30"/>
-                                <state key="normal" title="Query"/>
+                                <rect key="frame" x="214.5" y="191" width="171" height="30"/>
+                                <state key="normal" title="4. query with encryptKey"/>
                                 <connections>
                                     <action selector="encryptQuery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivA-K4-5XP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfN-lQ-ruL">
-                                <rect key="frame" x="272.5" y="233" width="55" height="30"/>
-                                <state key="normal" title="Decrypt"/>
+                                <rect key="frame" x="265" y="233" width="70" height="30"/>
+                                <state key="normal" title="5. decrypt"/>
                                 <connections>
                                     <action selector="decrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXc-nF-IGw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzc-Et-dRK">
-                                <rect key="frame" x="279" y="275" width="42" height="30"/>
-                                <state key="normal" title="Query"/>
+                                <rect key="frame" x="204" y="275" width="192" height="30"/>
+                                <state key="normal" title="6. query without encryptkey"/>
                                 <connections>
                                     <action selector="query:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBF-8z-53W"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no init" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peU-Gm-2uC">
-                                <rect key="frame" x="277" y="32" width="46.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peU-Gm-2uC">
+                                <rect key="frame" x="286" y="32" width="28.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
