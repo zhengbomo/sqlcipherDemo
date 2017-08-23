@@ -1,0 +1,6 @@
+framework module XCTestCaseAsync {
+  umbrella header "XCTestCaseAsync-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,7 +1,16 @@
-platform :ios, "7.0"
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+inhibit_all_warnings!
 
-pod 'FMDB/SQLCipher', '~> 2.6.2'
-
-target :SqlcipherDemoTests, :exclusive => true do
-  # pod 'Kiwi'
+target 'SqlcipherDemo' do
+    use_frameworks!
+    pod 'FMDB/SQLCipher', '~> 2.7.2'
 end
+
+target 'SqlcipherDemoTests' do
+    use_frameworks!
+    pod 'XCTestCaseAsync', '~> 1.0.2'
+end
+
+
+

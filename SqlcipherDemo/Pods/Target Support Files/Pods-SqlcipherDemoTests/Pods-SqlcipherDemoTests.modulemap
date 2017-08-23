@@ -1,0 +1,6 @@
+framework module Pods_SqlcipherDemoTests {
+  umbrella header "Pods-SqlcipherDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -21,7 +21,8 @@
 		6BC3EDC51CC3EAC50086E082 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDC41CC3EAC50086E082 /* PersonModel.m */; };
 		6BC3EDCB1CC3EB430086E082 /* FMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EDCA1CC3EB430086E082 /* FMEncryptHelper.m */; };
 		6BC3EE0A1CC409530086E082 /* DbTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3EE091CC409530086E082 /* DbTest.m */; };
-		E28C73CCB0AEE28CEE12E225 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D219B2FD87FD2EC992F176D0 /* libPods.a */; };
+		A89790E10A241C9C29FDCB08 /* Pods_SqlcipherDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D479268A2FC52B08940EAF3 /* Pods_SqlcipherDemoTests.framework */; };
+		DD499D05CCEF251760D7E94A /* Pods_SqlcipherDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E28A667E32AE87262B87EF /* Pods_SqlcipherDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		54394B5021070968BFCE3AD5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		017F6442E484FF69AE923B2C /* Pods-SqlcipherDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SqlcipherDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SqlcipherDemoTests/Pods-SqlcipherDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		05E28A667E32AE87262B87EF /* Pods_SqlcipherDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SqlcipherDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		540E8DCD17A3DF77F2AA4758 /* Pods-SqlcipherDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SqlcipherDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SqlcipherDemoTests/Pods-SqlcipherDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BC3ED781CC3C7730086E082 /* SqlcipherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqlcipherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC3ED7C1CC3C7730086E082 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BC3ED7E1CC3C7730086E082 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,8 +77,9 @@
 		6BC3EDCA1CC3EB430086E082 /* FMEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptHelper.m; sourceTree = "<group>"; };
 		6BC3EE081CC409530086E082 /* DbTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbTest.h; sourceTree = "<group>"; };
 		6BC3EE091CC409530086E082 /* DbTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbTest.m; sourceTree = "<group>"; };
-		7C10B576BF915CF3119DC588 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D219B2FD87FD2EC992F176D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D479268A2FC52B08940EAF3 /* Pods_SqlcipherDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SqlcipherDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1E81B894B491B4E455A27C /* Pods-SqlcipherDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SqlcipherDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SqlcipherDemo/Pods-SqlcipherDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C5CA2B8CF3C627A7EA0DF4FC /* Pods-SqlcipherDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SqlcipherDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SqlcipherDemo/Pods-SqlcipherDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E28C73CCB0AEE28CEE12E225 /* libPods.a in Frameworks */,
+				DD499D05CCEF251760D7E94A /* Pods_SqlcipherDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89790E10A241C9C29FDCB08 /* Pods_SqlcipherDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +114,21 @@
 			children = (
 				6BC3EDBE1CC3D2A50086E082 /* libsqlite3.0.tbd */,
 				6BC3EDBC1CC3CB6D0086E082 /* libsqlite3.tbd */,
-				D219B2FD87FD2EC992F176D0 /* libPods.a */,
+				05E28A667E32AE87262B87EF /* Pods_SqlcipherDemo.framework */,
+				8D479268A2FC52B08940EAF3 /* Pods_SqlcipherDemoTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		492BD018C20AF606B11C79AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5CA2B8CF3C627A7EA0DF4FC /* Pods-SqlcipherDemo.debug.xcconfig */,
+				AC1E81B894B491B4E455A27C /* Pods-SqlcipherDemo.release.xcconfig */,
+				540E8DCD17A3DF77F2AA4758 /* Pods-SqlcipherDemoTests.debug.xcconfig */,
+				017F6442E484FF69AE923B2C /* Pods-SqlcipherDemoTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		6BC3ED6F1CC3C7730086E082 = {
@@ -121,8 +138,8 @@
 				6BC3ED941CC3C7740086E082 /* SqlcipherDemoTests */,
 				6BC3ED9F1CC3C7740086E082 /* SqlcipherDemoUITests */,
 				6BC3ED791CC3C7730086E082 /* Products */,
-				6F1EBF40B97CC4C1C5BDCCFB /* Pods */,
 				24AC18282A6A9529D984B795 /* Frameworks */,
+				492BD018C20AF606B11C79AF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,15 +224,6 @@
 			path = EncryptFMDB;
 			sourceTree = "<group>";
 		};
-		6F1EBF40B97CC4C1C5BDCCFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				54394B5021070968BFCE3AD5 /* Pods.debug.xcconfig */,
-				7C10B576BF915CF3119DC588 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,12 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BC3EDA51CC3C7740086E082 /* Build configuration list for PBXNativeTarget "SqlcipherDemo" */;
 			buildPhases = (
-				3D26D57A4A0C9DD6F148815B /* Check Pods Manifest.lock */,
+				62B9048373E7F1DDFFB8BB60 /* [CP] Check Pods Manifest.lock */,
 				6BC3ED741CC3C7730086E082 /* Sources */,
 				6BC3ED751CC3C7730086E082 /* Frameworks */,
 				6BC3ED761CC3C7730086E082 /* Resources */,
-				2CEEE6D9BAA044AF63F30052 /* Embed Pods Frameworks */,
-				E08B6DD15D240DAF11170BF5 /* Copy Pods Resources */,
+				827B2CA136000B6F3D140C7C /* [CP] Embed Pods Frameworks */,
+				BD27A0CE80143BC21940E50A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BC3EDA81CC3C7740086E082 /* Build configuration list for PBXNativeTarget "SqlcipherDemoTests" */;
 			buildPhases = (
+				CEA7DA3F08A56270ACD58F79 /* [CP] Check Pods Manifest.lock */,
 				6BC3ED8D1CC3C7740086E082 /* Sources */,
 				6BC3ED8E1CC3C7740086E082 /* Frameworks */,
 				6BC3ED8F1CC3C7740086E082 /* Resources */,
+				DC64B702E932286BD7618405 /* [CP] Embed Pods Frameworks */,
+				21363D275F44A76DEB91A48F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,49 +356,108 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2CEEE6D9BAA044AF63F30052 /* Embed Pods Frameworks */ = {
+		21363D275F44A76DEB91A48F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SqlcipherDemoTests/Pods-SqlcipherDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3D26D57A4A0C9DD6F148815B /* Check Pods Manifest.lock */ = {
+		62B9048373E7F1DDFFB8BB60 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SqlcipherDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E08B6DD15D240DAF11170BF5 /* Copy Pods Resources */ = {
+		827B2CA136000B6F3D140C7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SqlcipherDemo/Pods-SqlcipherDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SqlcipherDemo/Pods-SqlcipherDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD27A0CE80143BC21940E50A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SqlcipherDemo/Pods-SqlcipherDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA7DA3F08A56270ACD58F79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SqlcipherDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC64B702E932286BD7618405 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SqlcipherDemoTests/Pods-SqlcipherDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XCTestCaseAsync/XCTestCaseAsync.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCTestCaseAsync.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SqlcipherDemoTests/Pods-SqlcipherDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -544,12 +614,12 @@
 		};
 		6BC3EDA61CC3C7740086E082 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54394B5021070968BFCE3AD5 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C5CA2B8CF3C627A7EA0DF4FC /* Pods-SqlcipherDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = SqlcipherDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bomo.SqlcipherDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -558,12 +628,12 @@
 		};
 		6BC3EDA71CC3C7740086E082 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C10B576BF915CF3119DC588 /* Pods.release.xcconfig */;
+			baseConfigurationReference = AC1E81B894B491B4E455A27C /* Pods-SqlcipherDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = SqlcipherDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bomo.SqlcipherDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,6 +642,7 @@
 		};
 		6BC3EDA91CC3C7740086E082 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 540E8DCD17A3DF77F2AA4758 /* Pods-SqlcipherDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SqlcipherDemoTests/Info.plist;
@@ -584,6 +655,7 @@
 		};
 		6BC3EDAA1CC3C7740086E082 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017F6442E484FF69AE923B2C /* Pods-SqlcipherDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SqlcipherDemoTests/Info.plist;
